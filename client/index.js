@@ -1,4 +1,7 @@
-import React from 'react';
-import App from './App';
+require('!style!css!sass!../scss/app.scss')
 
-React.render(<App />, document.getElementById('root'));
+import React from 'react'
+import App from './App'
+
+React.render(<App />, document.getElementById('root'))
+
