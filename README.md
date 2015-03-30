@@ -19,4 +19,9 @@ $ npm start
 
 What is production?
 
+```
+$ env NODE_ENV=production npm build
+```
+
+You still have to go change the path to the js in `index.html` because I haven't decided on how I want to go about providing that file.
 
