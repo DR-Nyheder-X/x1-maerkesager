@@ -36,11 +36,10 @@ var config = {
     extensions: ['', '.js', '.jsx']
   },
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loaders: loaders,
-      include: path.join(__dirname, 'client')
-    }]
+    loaders: [
+      { test: /\.jsx?$/, loaders: loaders, include: path.join(__dirname, 'client') },
+      { test: /\.s?css?$/, loaders: ['style', 'css', 'sass'] }
+    ]
   }
 }
 
