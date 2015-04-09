@@ -1,33 +1,22 @@
 {
-  "name": "react-hot-boilerplate",
-  "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "name": "hothothot",
+  "version": "0.1.0",
+  "description": "YART",
   "scripts": {
     "start": "node server.js",
     "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "url": "https://github.com/mikker/hothothot.git"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack"
-  ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "keywords": ["react"],
+  "author": "Mikkel Malmberg <mikkel@brnbw.com> (http://github.com/mikker)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+    "url": "https://github.com/mikker/hothothot/issues"
   },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "https://github.com/mikker/hothothot",
   "devDependencies": {
     "babel-core": "^4.7.4",
     "babel-loader": "^4.1.0",
