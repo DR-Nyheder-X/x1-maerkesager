@@ -6,6 +6,7 @@ Yet another Webpack starter
 * Babel
 * React Hot Loader
 * SCSS
+* Mocha (and jsdom)
 
 Based on [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate.git) but with added SCSS.
 
