@@ -1,6 +1,8 @@
 import React from 'react'
 
-require('./App.scss')
+if (process.env.NODE_ENV === 'development') {
+  require('./App.scss')
+}
 
 export default class App extends React.Component {
   render() {

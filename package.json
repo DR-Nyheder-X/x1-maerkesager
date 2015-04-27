@@ -4,13 +4,16 @@
   "description": "YART",
   "scripts": {
     "start": "node server.js",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "mocha --compilers js:babel/register --recursive"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mikker/hothothot.git"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": "Mikkel Malmberg <mikkel@brnbw.com> (http://github.com/mikker)",
   "license": "MIT",
   "bugs": {
@@ -18,9 +21,10 @@
   },
   "homepage": "https://github.com/mikker/hothothot",
   "devDependencies": {
-    "babel-core": "^4.7.4",
     "babel-loader": "^4.1.0",
     "css-loader": "^0.9.1",
+    "jsdom": "^5.1.0",
+    "mocha": "^2.2.4",
     "node-sass": "^2.1.1",
     "react-hot-loader": "^1.2.2",
     "sass-loader": "^0.4.2",
@@ -29,6 +33,7 @@
     "webpack-dev-server": "^1.7.0"
   },
   "dependencies": {
+    "babel": "^5.1.13",
     "react": "^0.13.0"
   }
 }
