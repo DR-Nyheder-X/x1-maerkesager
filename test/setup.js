@@ -1,10 +1,11 @@
+import 'babel/polyfill'
+
 import assert from 'assert'
 global.assert = assert
 
-import { jsdom } from 'jsdom'
-
-global.document = jsdom('<!doctype html><html><body></body></html>')
-global.window = document.defaultView
+// const jsdom = require('jsdom').jsdom
+// global.document = jsdom('<!doctype html><html><body></body></html>')
+// global.window = document.defaultView
 
 import React from 'react/addons'
 const TestUtils = React.addons.TestUtils
