@@ -1,7 +1,9 @@
 $helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
-body {
+#issues-root-bpfjVLpdn5z {
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
   font-family: $helvetica;
-  background-color: pink;
 }
 

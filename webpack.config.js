@@ -21,6 +21,7 @@ if (env.production) {
 
 var config = {
   devtool: 'eval',
+  color: true,
   entry: env.production ? index : [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',

@@ -86,7 +86,7 @@ Promise.all([
       id: answer.delta,
       issue_id: answer.sagid,
       party_id: party ? party.id : null,
-      position: ['yes', 'no', 'maybe'][position.svar],
+      position: ['no', 'yes', 'maybe'][position.svar],
       body: answer.tekst
     }
   })
@@ -96,8 +96,7 @@ Promise.all([
 }).then(data => {
 
   for (let key in data) {
-    mkdirpSync('./client/data')
-    fs.writeFileSync(`./client/data/${key}.json`, JSON.stringify(data[key]))
+    fs.writeFileSync('./client/data.js', `module.exports = ${JSON.stringify(data, null, 2)}`)
   }
 
 }).then(() => {
@@ -106,4 +105,3 @@ Promise.all([
   throw(e)
   exit(1)
 })
-

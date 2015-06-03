@@ -1,0 +1,29 @@
+#issues-root-bpfjVLpdn5z .AnswerTable {
+  width: 100%;
+  tr {
+    width: 50%;
+    float: left;
+  }
+  td > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  td.list {
+    text-transform: uppercase;
+    text-align: center;
+    width: 40px;
+    border-radius: 5px;
+    a {
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  td.position {
+    &.yes a { color: green; }
+    &.no a { color: red; }
+    &.maybe a { color: gray; }
+  }
+}

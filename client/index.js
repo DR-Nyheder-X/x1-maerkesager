@@ -1,5 +1,7 @@
-import React from 'react'
-import App from './App'
+require('babel/polyfill')
 
-React.render(<App />, document.getElementById('root'))
+import React from 'react'
+import App from './components/App'
+
+React.render(<App />, document.getElementById('issues-root-bpfjVLpdn5z'))
 
