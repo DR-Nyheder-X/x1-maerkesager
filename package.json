@@ -22,6 +22,7 @@
   "homepage": "https://github.com/mikker/hothothot",
   "devDependencies": {
     "babel-loader": "^5.0.0",
+    "bluebird": "^2.9.27",
     "css-loader": "^0.14.4",
     "karma": "^0.12.31",
     "karma-cli": "0.0.4",
@@ -29,7 +30,9 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-sourcemap-loader": "^0.3.4",
     "karma-webpack": "^1.5.0",
+    "mkdirp": "^0.5.1",
     "mocha": "^2.2.4",
+    "mysql": "^2.7.0",
     "node-sass": "^3.1.2",
     "null-loader": "^0.1.1",
     "react-hot-loader": "^1.2.2",
