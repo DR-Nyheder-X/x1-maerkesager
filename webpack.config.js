@@ -14,13 +14,14 @@ var loaders = ['babel']
 
 if (env.production) {
   plugins.push(new webpack.optimize.UglifyJsPlugin())
+  plugins.push(new webpack.optimize.DedupePlugin())
 } else {
   plugins.push(new webpack.HotModuleReplacementPlugin())
   loaders.unshift('react-hot')
 }
 
 var config = {
-  devtool: 'eval',
+  devtool: env.production ? null : 'eval-sourcemaps',
   color: true,
   entry: env.production ? index : [
     'webpack-dev-server/client?http://localhost:3000',
@@ -42,10 +43,6 @@ var config = {
       { test: /\.s?css?$/, loaders: ['style', 'css', 'sass'] }
     ]
   }
-}
-
-if (env.production) {
-  config.devtool = 'eval-sourcemaps'
 }
 
 module.exports = config

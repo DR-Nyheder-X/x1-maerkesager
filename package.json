@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "YART",
   "scripts": {
-    "start": "node server.js",
-    "build": "webpack",
-    "test": "karma start"
+    "start": "NODE_ENV=development node server.js",
+    "build": "NODE_ENV=production webpack -p --progress --color",
+    "test":  "NODE_ENV=test karma start"
   },
   "repository": {
     "type": "git",
