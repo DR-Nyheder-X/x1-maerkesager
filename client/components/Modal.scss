@@ -1,0 +1,66 @@
+#issues-root-bpfjVLpdn5z .Modal {
+  position: absolute;
+  &.visible { display: block; }
+
+  &.backdrop {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(black, .5);
+    overflow: auto;
+  }
+
+  .box {
+    position: absolute;
+    background: white;
+    padding: 1em;
+    height: 100%;
+    overflow: auto;
+  }
+
+  a.close-button {
+    display: inline-block;
+    background: #eee;
+    border-radius: 5px;
+    color: #777;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+
+  header {
+    margin: 1em 0 2em;
+    h1, h2 {
+      margin: 0;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 6px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+  }
+
+  .description {
+    margin: 10px 0 12px;
+    p {
+      margin: 0;
+      & + p {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  dt {
+    font-weight: 900;
+    background: #eee;
+    margin-bottom: 1em;
+  }
+  dd {
+    margin-left: 0;
+  }
+
+}

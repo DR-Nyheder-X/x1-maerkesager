@@ -4,9 +4,11 @@ import IssuesList from './IssuesList'
 require('./App.scss')
 
 export default class App extends React.Component {
-  render() {
+  render () {
     return (
-      <IssuesList />
+      <div>
+        <IssuesList />
+      </div>
     )
   }
 }

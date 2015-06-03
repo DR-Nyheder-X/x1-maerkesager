@@ -6,13 +6,15 @@ import { positions as posLabel } from '../lib/labels'
 require('./AnswerTable.scss')
 
 export default class AnswerTable extends Component {
-  static get displayName () { return "AnswerTable" }
+  static get displayName () { return 'AnswerTable' }
 
-  displayAnswer (answer) {
-    alert(answer.body)
+  static get propTypes () {
+    return {
+      answers: React.PropTypes.array
+    }
   }
 
-  render() {
+  render () {
     const answers = this.props.answers
     return (
       <table className='AnswerTable'>
@@ -22,7 +24,7 @@ export default class AnswerTable extends Component {
             return (
               <tr key={answer.id}>
                 <td className={`list ${cssClass(party.list)}`} style={{backgroundColor: party.color}}>
-                  <a href='' onClick={clickFn(this, 'displayAnswer', answer).bind(this)}>
+                  <a href={`#answer-${answer.id}`}>
                     {party.list}
                   </a>
                 </td>
@@ -40,9 +42,10 @@ export default class AnswerTable extends Component {
   }
 }
 
-function cssClass(list) {
+function cssClass (list) {
   const specials = {'æ': 'ae', 'ø': 'oe', 'å': 'aa'}
-  if (Object.keys(specials).indexOf(list) > -1)
+  if (Object.keys(specials).indexOf(list) > -1) {
     return specials[list]
+  }
   return list
 }
