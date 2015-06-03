@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { parties } from '../data'
-import clickFn from '../lib/clickFn'
 import { positions as posLabel } from '../lib/labels'
 
 require('./AnswerTable.scss')
@@ -29,7 +28,7 @@ export default class AnswerTable extends Component {
                   </a>
                 </td>
                 <td className={`position ${answer.position}`}>
-                  <a href='' onClick={clickFn(this, 'displayAnswer', answer).bind(this)}>
+                  <a href={`#answer-${answer.id}`}>
                     {posLabel(answer.position)}
                   </a>
                 </td>
