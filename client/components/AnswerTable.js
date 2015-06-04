@@ -1,18 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { parties } from '../data'
 import { positions as posLabel } from '../lib/labels'
 
 require('./AnswerTable.scss')
 
-export default class AnswerTable extends Component {
-  static get displayName () { return 'AnswerTable' }
-
-  static get propTypes () {
-    return {
-      answers: React.PropTypes.array
-    }
-  }
-
+export default React.createClass({
+  displayName: 'AnswerTable',
+  propTypes: {
+    answers: React.PropTypes.array
+  },
   render () {
     const answers = this.props.answers
     return (
@@ -39,7 +35,7 @@ export default class AnswerTable extends Component {
       </table>
     )
   }
-}
+})
 
 function cssClass (list) {
   const specials = {'æ': 'ae', 'ø': 'oe', 'å': 'aa'}

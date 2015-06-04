@@ -1,36 +1,26 @@
-import React, { Component } from 'react'
-import clickFn from '../lib/clickFn'
+import React from 'react'
 import AnswerTable from './AnswerTable'
 import { answers as allAnswers, categories, parties } from '../data'
 
 require('./Modal.scss')
 
-export default class Modal extends Component {
-  static get displayName () { return 'Modal' }
-
-  static get propTypes () {
-    return {
-      issue: React.PropTypes.object.isRequired,
-      onClose: React.PropTypes.func
-    }
-  }
-
-  constructor (props) {
-    super(props)
-
-    this.state = props
-  }
-
+export default React.createClass({
+  displayName: 'Modal',
+  propTypes: {
+    issue: React.PropTypes.object.isRequired,
+    onClose: React.PropTypes.func
+  },
+  getInitialState () {
+    return {}
+  },
   componentWillReceiveProps (props) {
     this.setState(props)
-  }
-
+  },
   close () {
     this.setState({ issue: undefined })
-  }
-
+  },
   render () {
-    const issue = this.state.issue
+    const issue = this.props.issue
 
     const category = categories.find(c => c.id === issue.category_id)
     const answers = allAnswers.filter(a => a.issue_id === issue.id)
@@ -52,7 +42,7 @@ export default class Modal extends Component {
           {answers.map(answer => {
             const party = parties.find(p => p.id === answer.party_id)
             return (
-              <dl>
+              <dl key={answer.id}>
                 <a name={`answer-${answer.id}`}></a>
                 <dt>
                   <span className='list' style={{backgroundColor: party.color}}>{party.list}</span>
@@ -66,4 +56,4 @@ export default class Modal extends Component {
       </div>
     )
   }
-}
+})

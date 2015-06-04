@@ -1,23 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { issues, categories } from '../data'
 import clickFn from '../lib/clickFn'
 
 require('./IssuesList.scss')
 
-export default class IssuesList extends Component {
-  static get displayName () { return 'IssuesList' }
-
-  static get propTypes () {
-    return {
-      onIssueClick: React.PropTypes.func
-    }
-  }
-
-  constructor (props) {
-    super(props)
-    this.state = {}
-  }
-
+export default React.createClass({
+  displayName: 'IssuesList',
+  getInitialState () {
+    return {}
+  },
+  propTypes: {
+    onIssueClick: React.PropTypes.func
+  },
   render () {
     return (
       <ul className='IssuesList'>
@@ -42,4 +36,4 @@ export default class IssuesList extends Component {
       </ul>
     )
   }
-}
+})
