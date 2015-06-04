@@ -1,17 +1,5 @@
 #issues-root-bpfjVLpdn5z .Modal {
-  &.visible { display: block; }
-  z-index: 99999;
-
-  &.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(black, .5);
-    overflow: auto;
-    background: white;
-  }
+  background: white;
 
   .box {
     padding: 1em;
@@ -40,6 +28,10 @@
     }
   }
 
+  h3 {
+    margin: 20px 0 10px;
+  }
+
   .description {
     margin: 10px 0 12px;
     p {
@@ -53,10 +45,11 @@
   dt {
     font-weight: 900;
     background: #eee;
-    margin-bottom: 1em;
+    margin-top: 1em;
   }
   dd {
     margin-left: 0;
+    padding: 10px;
   }
 
 }

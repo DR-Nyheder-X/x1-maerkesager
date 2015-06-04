@@ -5,16 +5,13 @@ import { answers as allAnswers, categories, parties } from '../data'
 
 require('./Modal.scss')
 
-function toggleBodyOverflow (on) {
-  document.body.style.overflow = on ? 'hidden' : 'auto'
-}
-
 export default class Modal extends Component {
   static get displayName () { return 'Modal' }
 
   static get propTypes () {
     return {
-      issue: React.PropTypes.object
+      issue: React.PropTypes.object.isRequired,
+      onClose: React.PropTypes.func
     }
   }
 
@@ -35,19 +32,13 @@ export default class Modal extends Component {
   render () {
     const issue = this.state.issue
 
-    if (!issue) {
-      toggleBodyOverflow(false)
-      return null
-    }
-    toggleBodyOverflow(true)
-
     const category = categories.find(c => c.id === issue.category_id)
     const answers = allAnswers.filter(a => a.issue_id === issue.id)
 
     return (
       <div className={`Modal backdrop`}>
         <div className='box'>
-          <a href='' className='close-button' onClick={clickFn(this, 'close')}>x Luk</a>
+          <a href='' className='close-button' onClick={this.props.onClose}>&laquo; Tilbage</a>
           <header>
             <h1>{issue.title}</h1>
             <h2 className='category' style={{backgroundColor: category.color}}>{category.title}</h2>

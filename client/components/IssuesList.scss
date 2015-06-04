@@ -4,6 +4,8 @@
   margin: 0;
 
   li {
+    width: 50%;
+    float: left;
     background: #eee;
   }
 
@@ -26,6 +28,8 @@
       font-weight: normal;
       font-size: 26px;
       margin-bottom: 6px;
+      line-height: 1;
+      height: 54px;
     }
     h2 {
       font-size: 14px;
