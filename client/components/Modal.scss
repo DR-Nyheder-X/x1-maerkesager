@@ -1,9 +1,8 @@
 #issues-root-bpfjVLpdn5z .Modal {
-  position: absolute;
   &.visible { display: block; }
+  z-index: 99999;
 
   &.backdrop {
-    position: absolute;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,14 +10,11 @@
     right: 0;
     background: rgba(black, .5);
     overflow: auto;
+    background: white;
   }
 
   .box {
-    position: absolute;
-    background: white;
     padding: 1em;
-    height: 100%;
-    overflow: auto;
   }
 
   a.close-button {

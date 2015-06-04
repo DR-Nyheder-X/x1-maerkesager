@@ -47,7 +47,7 @@ export default class Modal extends Component {
     return (
       <div className={`Modal backdrop`}>
         <div className='box'>
-          <a href='' className='close-button' onClick={clickFn(this, 'close')}>⤫ Luk</a>
+          <a href='' className='close-button' onClick={clickFn(this, 'close')}>x Luk</a>
           <header>
             <h1>{issue.title}</h1>
             <h2 className='category' style={{backgroundColor: category.color}}>{category.title}</h2>

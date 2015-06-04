@@ -24,7 +24,7 @@ export default class IssuesList extends Component {
           const category = categories.find(c => c.id === issue.category_id)
           return (
             <li key={issue.id}>
-              <a href='' onClick={clickFn(this, 'toggleIssue', issue)} style={{backgroundImage: `url(/images/sag/${issue.id}.jpg)`}}>
+              <a href='' onClick={clickFn(this, 'toggleIssue', issue)} style={{backgroundImage: `url(/nyheder/htm/drdinstemme/issues/${issue.id}.jpg)`}}>
                 <div className='gradient'>
                   <h1>{issue.title}</h1>
                   <h2>

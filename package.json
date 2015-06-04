@@ -4,8 +4,8 @@
   "description": "YART",
   "scripts": {
     "start": "NODE_ENV=development node server.js",
-    "build": "NODE_ENV=production webpack -p --progress --color",
-    "test":  "NODE_ENV=test karma start"
+    "build": "NODE_ENV=production webpack --progress --color",
+    "test": "NODE_ENV=test karma start"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/mikker/hothothot",
   "devDependencies": {
     "babel-loader": "^5.0.0",
+    "babelify": "^6.1.2",
     "bluebird": "^2.9.27",
     "css-loader": "^0.14.4",
     "karma": "^0.12.31",
