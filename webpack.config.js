@@ -13,8 +13,7 @@ var plugins = [new webpack.NoErrorsPlugin()]
 var loaders = ['babel']
 
 if (env.production) {
-  // plugins.push(new webpack.optimize.UglifyJsPlugin())
-  // plugins.push(new webpack.optimize.DedupePlugin())
+  plugins.push(new webpack.optimize.UglifyJsPlugin())
 } else {
   plugins.push(new webpack.HotModuleReplacementPlugin())
   loaders.unshift('react-hot')

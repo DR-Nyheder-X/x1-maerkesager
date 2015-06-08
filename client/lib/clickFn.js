@@ -7,6 +7,7 @@
  */
 export default function clickFn(binding, fn, ...args) {
   return function click(e) {
+    e.stopPropagation()
     e.preventDefault()
     return binding[fn].apply(binding, args)
   }.bind(this)

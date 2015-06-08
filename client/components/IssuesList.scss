@@ -3,10 +3,11 @@
   padding: 0;
   margin: 0;
 
-  li {
-    width: 50%;
-    float: left;
-    background: #eee;
+  @media screen and (min-width: 500px) {
+    & > li {
+      float: left;
+      width: 50%;
+    }
   }
 
   li > a {

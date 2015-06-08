@@ -10,15 +10,6 @@ export default React.createClass({
     issue: React.PropTypes.object.isRequired,
     onClose: React.PropTypes.func
   },
-  getInitialState () {
-    return {}
-  },
-  componentWillReceiveProps (props) {
-    this.setState(props)
-  },
-  close () {
-    this.setState({ issue: undefined })
-  },
   render () {
     const issue = this.props.issue
 
