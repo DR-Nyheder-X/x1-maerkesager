@@ -195,7 +195,8 @@ module.exports = {
       "short_name": "Soc.dem.",
       "color": "#b80800",
       "block": 0,
-      "mandates": 47
+      "mandates": 47,
+      "wing": "left"
     },
     {
       "id": 1,
@@ -204,7 +205,8 @@ module.exports = {
       "short_name": "Alt.",
       "color": "#2a9138",
       "block": 0,
-      "mandates": 1
+      "mandates": 1,
+      "wing": "left"
     },
     {
       "id": 2,
@@ -213,7 +215,8 @@ module.exports = {
       "short_name": "Rad. V.",
       "color": "#733380",
       "block": 0,
-      "mandates": 17
+      "mandates": 17,
+      "wing": "left"
     },
     {
       "id": 3,
@@ -222,7 +225,8 @@ module.exports = {
       "short_name": "Kons.",
       "color": "#a1bd29",
       "block": 1,
-      "mandates": 8
+      "mandates": 8,
+      "wing": "right"
     },
     {
       "id": 4,
@@ -231,7 +235,8 @@ module.exports = {
       "short_name": "SF",
       "color": "#de0a78",
       "block": 0,
-      "mandates": 12
+      "mandates": 12,
+      "wing": "left"
     },
     {
       "id": 5,
@@ -240,7 +245,8 @@ module.exports = {
       "short_name": "Lib. All.",
       "color": "#21c7d1",
       "block": 1,
-      "mandates": 9
+      "mandates": 9,
+      "wing": "right"
     },
     {
       "id": 6,
@@ -249,7 +255,8 @@ module.exports = {
       "short_name": "Krist.dem.",
       "color": "#8f8a75",
       "block": 1,
-      "mandates": 0
+      "mandates": 0,
+      "wing": "right"
     },
     {
       "id": 7,
@@ -258,7 +265,8 @@ module.exports = {
       "short_name": "DF",
       "color": "#f8d95a",
       "block": 1,
-      "mandates": 22
+      "mandates": 22,
+      "wing": "right"
     },
     {
       "id": 8,
@@ -267,7 +275,8 @@ module.exports = {
       "short_name": "Enhedsl.",
       "color": "#f0801a",
       "block": 0,
-      "mandates": 12
+      "mandates": 12,
+      "wing": "left"
     },
     {
       "id": 9,
@@ -276,206 +285,11 @@ module.exports = {
       "short_name": "Venstre",
       "color": "#055ca3",
       "block": 1,
-      "mandates": 47
+      "mandates": 47,
+      "wing": "right"
     }
   ],
   "answers": [
-    {
-      "id": 1,
-      "issue_id": 1,
-      "party_id": 0,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Vi vil hvert år bruge flere penge på fælles velfærd.</li>\r\n<li>Vi går ikke ind for nulvækst i det offentlige. Det udhuler vores velfærdssamfund</li>\r\n<li>Nulvækst vil betyde 20 mia. kroner mindre til velfærd og 28.000 færre offentligt ansatte.</li>\r\n</ul>"
-    },
-    {
-      "id": 2,
-      "issue_id": 1,
-      "party_id": 2,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Vi skal løbende udvikle vores velfærd i takt med fx flere ældre og flere patienter på danske sygehuse.</li>\r\n<li>Vi går ikke ind for nulvækst i det offentlige. I stedet skal vi lave reformer i Danmark, så der bliver råd til bedre velfærd.</li>\r\n<li>I vores program er der plads til at bruge tre mia. kroner mere om året på velfærd.</li>\r\n</ul>"
-    },
-    {
-      "id": 3,
-      "issue_id": 1,
-      "party_id": 3,
-      "position": "no",
-      "body": "<ul>\r\n<li>Den offentlige sektor skal ikke vokse.</li>\r\n<li>Offentlig nulvækst er nødvendig, hvis vi skal få vækst i økonomien ved at sænke skatter og afgifter.</li>\r\n<li>Spørgsmålet er afgørende for, om K vil gå med i en regering.</li>\r\n</ul>"
-    },
-    {
-      "id": 4,
-      "issue_id": 1,
-      "party_id": 4,
-      "position": "yes",
-      "body": "<ul>\r\n<li>SF kæmper for en stærk offentlig sektor.</li>\r\n<li>Nulvækst vil have store konsekvenser for vores velfærd, både for de danskere, der bliver fyret, og for dem, der er afhængig af pædagoger, hjemmehjælpere og andre.</li>\r\n</ul>"
-    },
-    {
-      "id": 5,
-      "issue_id": 1,
-      "party_id": 5,
-      "position": "no",
-      "body": "<ul>\r\n<li>Den offentlige sektor skal gøres meget mindre og vi skal have færre offentligt ansatte.</li>\r\n<li>Vi bruger for mange kræfter på registrering, endeløst bureaukrati og og meningsløse projekter, der ikke er til gavn for borgerne.</li>\r\n<li>Der skal spares 90 mia. kr. på det offentlige budget om året. Ikke på 'varme hænder', men bureaukrati, ulandsbistand og andet.</li>\r\n</ul>"
-    },
-    {
-      "id": 6,
-      "issue_id": 1,
-      "party_id": 6,
-      "position": "maybe",
-      "body": "<ul><li>?</li></ul>"
-    },
-    {
-      "id": 7,
-      "issue_id": 1,
-      "party_id": 7,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Vi er imod nulvækst. Vi skal give borgerne en ordentlig service.</li>\r\n<li>Samfundet udvikler sig, behandlinger bliver dyrere, og der kommer flere ældre. Derfor koster det flere penge bare at holde samme standard.</li>\r\n<li>Der skal ikke skæres i antallet af varme hænder.</li>\r\n</ul>"
-    },
-    {
-      "id": 8,
-      "issue_id": 1,
-      "party_id": 9,
-      "position": "no",
-      "body": "<ul>\r\n<li>Den offentlige sektor skal være effektiv og serviceorienteret, så skatteydernes penge bruges bedst muligt.</li>\r\n<li>Vi skal stopppe væksten i de offentlige udgifter. De skal kun stige i takt med prisudviklingen.</li>\r\n<li>Den offentlige sektor kan godt vokse et sted, hvis man sparer et andet, så det samlet går i nul.</li>\r\n</ul>"
-    },
-    {
-      "id": 9,
-      "issue_id": 1,
-      "party_id": 8,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Vi vil sikre et markant løft finansieringen af velfærd og sundhed efter de senere års drastiske beskæringer.</li>\r\n<li>Et stærkt velfærdssamfund er ikke bare socialt retfærdigt; det skaber også en sund økonomi.</li>\r\n</ul>"
-    },
-    {
-      "id": 10,
-      "issue_id": 1,
-      "party_id": 1,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>Politikerne skal vise langt større tillid til den offentlige sektor.</li>\r\n<li>Den behøver ikke nødvendigvis at være større, end den er i dag, på nogle områder kunne den godt blive mindre.</li>\r\n</ul>"
-    },
-    {
-      "id": 11,
-      "issue_id": 3,
-      "party_id": 0,
-      "position": "no",
-      "body": "<ul>\r\n<li>Flygtninge og indvandrere skal hurtigst muligt i arbejde, ud blandt kolleger og lære sproget. Alt for mange indvandrere er ikke i job. De skal ikke gøres til klienter.</li>\r\n<li>Flygtninge skal fra dag ét kunne tilbydes job, og man skal tage det job, man bliver tilbudt, ellers bliver man trukket i de penge, man får af det offentlige.</li>\r\n<li>De, der modtager kontanthjælp, skal tage et nyttejob, for eksempel at rydde op på strande eller hjælpe på plejehjem.</li>\r\n<li>Det er regeringens mål, at 10.000 flere indvandrere og efterkommere kommer i arbejde inden år 2020.</li>\r\n</ul>"
-    },
-    {
-      "id": 12,
-      "issue_id": 3,
-      "party_id": 2,
-      "position": "no",
-      "body": "<ul>\r\n<li>At sikre muligheder for at komme i arbejde er vigtigt for integration og medborgerskab.</li>\r\n<li>Indvandrere og flygtninge skal ikke  have hårdere behandling end andre ledige.</li>\r\n<li>Praktik, ansættelse med jobtilskud, brug af voksenlærlinge, støtte til virksomheder og mere brug af erhvervsmentorordninger er veje frem for at få flere indvandrere og efterkommere i arbejde.</li>\r\n</ul>"
-    },
-    {
-      "id": 13,
-      "issue_id": 3,
-      "party_id": 3,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Flygtninge og indvandrere på kontanthjælp fremover skal arbejde for deres sociale ydelser.</li>\r\n<li>Genindførelse af starthjælp og kontanthjælpsloft skal gøre det mere attraktivt for flygtninge og indvandrere at tage et arbejde.</li>\r\n<li>Vi skal ikke importere mere arbejdskraft, når Danmark samtidig har udgifter til indvandrere, der allerede er her og går ledige.</li>\r\n</ul>"
-    },
-    {
-      "id": 14,
-      "issue_id": 3,
-      "party_id": 4,
-      "position": "no",
-      "body": "<ul>\r\n<li>Flere flygtninge og indvandrere skal i arbejde. Men vi vil bruge gulerod frem for pisk: for eksempel via partnerskaber med gartnerier og rengøringsfirmaer.</li>\r\n<li>Det offentlige skal tage større ansvar – og virksomhederne skal aktivt arbejde med mangfoldighed.</li>\r\n<li>Et rejsehold skal hjælpe kommunerne til at forbedre deres indsats og få et bedre overblik.</li>\r\n</ul>"
-    },
-    {
-      "id": 15,
-      "issue_id": 3,
-      "party_id": 5,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Lavere sociale ydelser skal give flygtninge og indvandrere større tilskyndelse til at finde et job.</li>\r\n<li>Støtter grundlæggende Venstres forslag.</li>\r\n</ul>"
-    },
-    {
-      "id": 16,
-      "issue_id": 3,
-      "party_id": 6,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>?</li>\r\n</ul>"
-    },
-    {
-      "id": 17,
-      "issue_id": 3,
-      "party_id": 7,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Først og fremmest skal tilstrømningen af flygtninge og indvandrere til Danmark standses. Ellers er det en illusion at tro, at det er muligt at integrere dem, der er i landet.</li>\r\n<li>De offentlige ydelser til indvandrere skal sættes ned og folk, der kommer udefra, skal ikke fra første dag have ret til at få de samme ydelser og samme velfærd som danske statsborgere. Det vil betyde, at det vil kunne betale sig for udlændinge at tage et arbejde.</li>\r\n<li>Målet med integrationslovgivningen er, indvandrere indgår i samfundslivet på linje med danske statsborgere: Altså på lige fod, når det gælder uddannelse, arbejde og i fritids- og kulturaktiviteter.</li>\r\n</ul>"
-    },
-    {
-      "id": 18,
-      "issue_id": 3,
-      "party_id": 9,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Indvandrere skal i job og uddannelse i samme omfang som øvrige danskere. De skal stå til rådighed for arbejdsmarkedet så tidligt som muligt, helst fra dag 1.</li>\r\n<li>Det er vigtigt, at det kan betale sig at arbejde.</li>\r\n<li>Kommunernes skal måles på, om de er gode til at få udlændinge i arbejde eller uddannelse. De bedste kommuner skal belønnes med op mod én milliard kroner.</li>\r\n</ul>"
-    },
-    {
-      "id": 19,
-      "issue_id": 3,
-      "party_id": 8,
-      "position": "no",
-      "body": "<ul>\r\n<li>Arbejdsmarkedet skal indrettes langt mere socialt end i dag.</li>\r\n<li>Der skal skabes reelle jobmuligheder til flygtninge og indvandrere, som i dag ikke kan få et arbejde, fordi de ikke kan yde 100 procent fra dag 1.</li>\r\n<li>Kravet til kommunerne skal være realistisk: Har man høj arbejdsløshed, har man heller ikke de store muligheder for at skaffe arbejde til hverken flygtninge, indvandrere eller andre uden for arbejdsmarkedet.</li>\r\n</ul>"
-    },
-    {
-      "id": 20,
-      "issue_id": 2,
-      "party_id": 0,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>Vi ønsker et nyt dagpengesystem og en beskæftigelsesreform, der hurtigere får ledige i arbejde.</li>\r\n<li>Genoptjeningsreglerne skal nytænkes. Lønmodtagerne skal have et incitament til at tage korte ansættelser.</li>\r\n<li>Det er uholdbart, hvis det ikke kan betale sig for dagpengemodtagere at tage et job uanset længde.</lI>\r\n<li>Dagpengesystemet må ikke blive dyrere.</li>\r\n</ul>"
-    },
-    {
-      "id": 21,
-      "issue_id": 2,
-      "party_id": 4,
-      "position": "no",
-      "body": "<ul>\r\n<li>Genoptjeningsperioden skal forkortes.</li>\r\n<li>Det helt afgørende er selvfølgelig, at man kan se den gulerod, der er ved at tage et vikariat på seks måneder, og man så igen har genoptjent retten til dagpenge. Derfor vil vores krav til finansloven også fortsat være at halvere genoptjeningskravet.</li>\r\n</ul>"
-    },
-    {
-      "id": 22,
-      "issue_id": 2,
-      "party_id": 7,
-      "position": "no",
-      "body": "<ul>\r\n<li>Dansk Folkeparti foreslår, at dagpengeperioden ikke er lagt fast, men i stedet følger økonomien.</li>\r\n<li>Når det er dårlige tider, skal der være længere dagpengeperiode og kortere optjening.</li>\r\n<li>I gode tider skal der være kortere dagpengeperiode og længere optjening.</li>\r\n<li>Det er et krav fra DF, at systemet ændres efter et valg, hvis DF får indflydelse.</li>\r\n</ul>"
-    },
-    {
-      "id": 23,
-      "issue_id": 2,
-      "party_id": 5,
-      "position": "yes",
-      "body": "<ul>\r\n<li>Dagpengeperioden skal være kortere end i dag - ned til 1 år. Og så skal satserne være lavere.</li>\r\n</ul>"
-    },
-    {
-      "id": 24,
-      "issue_id": 2,
-      "party_id": 3,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>Konservative vil belønne folk, der har været på arbejdsmarkedet i mange år.</li>\r\n<li>Man skal have været på arbejdsmarkedet mindst 12 år, for at få ret til to års dagpenge. Disse folk skal så også have ret til til 21.000 kr om måneden, men aftrappes hvert kvartal.</li>\r\n<li>Har man været på arbejdsmarkedet under seks år, er dagpengeperioden kun et år.</li>\r\n</ul>"
-    },
-    {
-      "id": 25,
-      "issue_id": 2,
-      "party_id": 8,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>Helt centralt krav for at støtte en ny regering, at dagpengesystemet laves om.</li>\r\n<li>Enhedslisten har fremsat en lang række konkrete forslag til ændringer af reglerne, fx xxx og xxxx.</li>\r\n</ul>"
-    },
-    {
-      "id": 26,
-      "issue_id": 2,
-      "party_id": 1,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>Vil erstatte dagpenge med en basisydelse, som gives til folk uden krav om at stå til rådighed for arbejdsmarkedet.</li>\r\n</ul>"
-    },
-    {
-      "id": 27,
-      "issue_id": 2,
-      "party_id": 9,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>\"Hvis man inden for rammerne af den økonomi, der er i vores dagpengesystem, kan lave et mere intelligent system, er det ikke noget, jeg på forhånd vil afvise\" – Lars Løkke Rasmussen</li>\r\n</ul>"
-    },
-    {
-      "id": 28,
-      "issue_id": 2,
-      "party_id": 2,
-      "position": "maybe",
-      "body": "<ul>\r\n<li>Ønsker ikke ændringer af det nuværende system.</li>\r\n</ul>"
-    },
     {
       "id": 29,
       "issue_id": 4,
@@ -530,7 +344,7 @@ module.exports = {
       "issue_id": 4,
       "party_id": 7,
       "position": "no",
-      "body": "Grundlæggende nej. Men det er vigtigt, at skoledagen kommer til at fungere med det idrætsliv og de fritidstilbud, der er. Det er en vigtig opgave for skolerne"
+      "body": "Grundlæggende nej. Men det er vigtigt, at skoledagen kommer til at fungere med det idrætsliv og de fritidstilbud, der er. Det er en vigtig opgave for skolerne."
     },
     {
       "id": 37,
@@ -663,7 +477,7 @@ module.exports = {
       "issue_id": 6,
       "party_id": 3,
       "position": "no",
-      "body": "Nej, umiddelbart synes vi ikke, at det skal koste penge at gå til lægen. Men vi vil gerne se på hele sundhedsvæsenet og brugerbetaling, for der er noget uretfærdigt i, at man betaler meget for at gå til tandlægen, men intet for at gå til lægen."
+      "body": "Nej, umiddelbart synes vi ikke, at det skal koste penge at gå til lægen. Vi ønsker, at et ekspertudvalg skal se på om den eksisterende brugerbetaling kan fordeles på en mere hensigtsmæssig og socialt retfærdig måde."
     },
     {
       "id": 56,
@@ -690,8 +504,8 @@ module.exports = {
       "id": 59,
       "issue_id": 7,
       "party_id": 9,
-      "position": "yes",
-      "body": "Ja. I Venstre har vi bestemt ikke noget imod private aktører. For os handler det om, at kvaliteten er god, og at de ældre får noget for pengene."
+      "position": "maybe",
+      "body": "I Venstre har vi bestemt ikke noget imod private aktører i det omfang, de kan løse opgaven bedre og til en lavere pris. Men det afgørende er, at kvaliteten er god, og at de ældre får noget for pengene."
     },
     {
       "id": 60,
@@ -733,7 +547,7 @@ module.exports = {
       "issue_id": 7,
       "party_id": 3,
       "position": "yes",
-      "body": "Ja, det vil være dejligt, hvis mere ældrepleje blev udliciteret. Vi tror på, at fri konkurrence fører til bedre kvalitet, og det kommer de ældre medborgere til gavn"
+      "body": "Ja, det vil være dejligt, hvis de ældre i højere grad havde mulighed for at vælge private plejetilbud. Vi tror på, at fri konkurrence fører til bedre kvalitet, og det kommer de ældre medborgere til gavn."
     },
     {
       "id": 66,
@@ -760,7 +574,7 @@ module.exports = {
       "id": 69,
       "issue_id": 8,
       "party_id": 9,
-      "position": "no",
+      "position": "maybe",
       "body": "Nej. Vi er tilfredse med den dagpengereform, vi fik vedtaget i sin tid. Men hvis man kunne indrette det bedre inden for den samme økonomiske ramme, vil vi selvfølgelig være lydhøre over for det."
     },
     {
@@ -859,7 +673,7 @@ module.exports = {
       "issue_id": 9,
       "party_id": 8,
       "position": "yes",
-      "body": "Ja. Vi går ind for kædeansvar, som det hedder i Enhedslisten. Det vil være et effektivt redskab til at bekæmpe social dumping. Vi undgår alle underselskaberne, der snyder med lønnen og snyder med skatten"
+      "body": "Ja. Vi går ind for kædeansvar, som det hedder i Enhedslisten. Det vil være et effektivt redskab til at bekæmpe social dumping. Vi undgår alle underselskaberne, der snyder med lønnen og snyder med skatten."
     },
     {
       "id": 84,
@@ -873,7 +687,7 @@ module.exports = {
       "issue_id": 9,
       "party_id": 3,
       "position": "no",
-      "body": "Nej. Virksomhederne skal stå til ansvar for deres eget virke, de skal ikke stå til ansvar for deres underleverandører. Vi er imod kædeansvar"
+      "body": "Nej. Virksomhederne skal stå til ansvar for deres eget virke, de skal ikke stå til ansvar for deres underleverandører. Vi er imod kædeansvar."
     },
     {
       "id": 86,
@@ -894,7 +708,7 @@ module.exports = {
       "issue_id": 9,
       "party_id": 4,
       "position": "yes",
-      "body": "Selvfølgelig skal de det. Virksomheder et større ansvar end lige deres egen profitlinje, de har et samfundsansvar. Man skal have styr på sine underleverandører, og man skal ansætte lærlinge. "
+      "body": "Selvfølgelig skal de det. Virksomheder et større ansvar end lige deres egen profitlinje, de har et samfundsansvar. Man skal have styr på sine underleverandører, og man skal ansætte lærlinge."
     },
     {
       "id": 89,
@@ -971,14 +785,14 @@ module.exports = {
       "issue_id": 11,
       "party_id": 9,
       "position": "no",
-      "body": "Nej. I en lang periode har vi prioriteret den offentlige og kollektive transport, og nu er det vigtigt for os at få nogle gode veje i forhold til privatbilismen. "
+      "body": "Nej. I en lang periode har vi prioriteret den offentlige og kollektive transport, og nu er det vigtigt for os at få nogle gode veje i forhold til privatbilismen."
     },
     {
       "id": 100,
       "issue_id": 11,
       "party_id": 5,
       "position": "no",
-      "body": "Nej, vi synes, at der skal være en balance. Der skal være en ordentlig offentlig trafik, men vi synes, at bilerne og vejene er blevet underprioritet i mange år "
+      "body": "Nej, vi synes, at der skal være en balance. Der skal være en ordentlig offentlig trafik, men vi synes, at bilerne og vejene er blevet underprioritet i mange år."
     },
     {
       "id": 101,
@@ -1027,14 +841,14 @@ module.exports = {
       "issue_id": 11,
       "party_id": 0,
       "position": "yes",
-      "body": "Det er vigtigt, at man både investerer i den kollektive trafik og i, at man kan køre i sin private bil. Men i de år, der kommer, prioriterer vi den kollektive trafik højest, blandt andet med togfonden, som sikrer kæmpe forbedring af vores kollektive transport."
+      "body": "Det er vigtigt, at man både investerer i den kollektive trafik og i, at man kan køre i sin private bil. Men i de år, der kommer, prioriterer vi den kollektive trafik højest, blandt andet med togfonden, som sikrer markant kortere rejsetid med tog."
     },
     {
       "id": 108,
       "issue_id": 11,
       "party_id": 4,
       "position": "yes",
-      "body": "Ja, det skal den. Togfonden er et eksempel på, hvordan vi flytter penge fra nordsøolien til at få bedre og hurtigere toge, der er til fordel for os alle. Den linje skal vi fortsætte af. "
+      "body": "Ja, det skal den. Togfonden er et eksempel på, hvordan vi flytter penge fra nordsøolien til at få bedre og hurtigere toge, der er til fordel for os alle. Den linje skal vi fortsætte af."
     },
     {
       "id": 109,
@@ -1048,7 +862,7 @@ module.exports = {
       "issue_id": 12,
       "party_id": 5,
       "position": "yes",
-      "body": "Ja, Liberal Alliance ønsker at skærpe straffen fire steder: vold, voldtægt, trusler og overgreb mod børn."
+      "body": "Ja, Liberal Alliance ønsker at skærpe straffen fire steder: vold, voldtægt, trusler og overgreb mod børn"
     },
     {
       "id": 111,
@@ -1139,7 +953,7 @@ module.exports = {
       "issue_id": 13,
       "party_id": 8,
       "position": "no",
-      "body": "Nej, hetzen mod de arbejdsløse er uforskammet. Der kommer ikke flere arbejdspladser ud af, at man gør de arbejdsløse fattigere. Det betyder bare, at de får et sværere liv. Det er ikke deres skyld, at der mangler arbejdspladser i Danmark. "
+      "body": "Nej, hetzen mod de arbejdsløse er uforskammet. Der kommer ikke flere arbejdspladser ud af, at man gør de arbejdsløse fattigere. Det betyder bare, at de får et sværere liv. Det er ikke deres skyld, at der mangler arbejdspladser i Danmark."
     },
     {
       "id": 124,
@@ -1160,14 +974,14 @@ module.exports = {
       "issue_id": 13,
       "party_id": 7,
       "position": "no",
-      "body": "Nej, selve kontanthjælpen skal ikke sænkes. Vi ønsker et kontanthjælpsloft, så der er en grænse for, hvor meget man samlet kan få i offentlige ydelser, men selve kontanthjælpen skal ikke sænkes. "
+      "body": "Nej, selve kontanthjælpen skal ikke sænkes. Vi ønsker et kontanthjælpsloft, så der er en grænse for, hvor meget man samlet kan få i offentlige ydelser, men selve kontanthjælpen skal ikke sænkes."
     },
     {
       "id": 127,
       "issue_id": 13,
       "party_id": 0,
       "position": "no",
-      "body": "Nej. Det kan allerede betale sig at arbejde i Danmark, og sådan skal det selvfølgelig være. Men hvis man skærer i kontanthjælpen, går det hårdt ud over børnefamilier, og det vil vi ikke være med til."
+      "body": "Nej, vi vil ikke sænke kontanthjælpen, fordi det vil gå hårdt ud over børnefamilier. Men vi ser gerne, at det bedre kan betale sig at arbejde. Derfor letter vi skatten for de lavestlønnede og indfører en jobpræmie for kontanthjælpsmodtagere, der har været arbejdsløse i lang tid."
     },
     {
       "id": 128,
@@ -1209,7 +1023,7 @@ module.exports = {
       "issue_id": 14,
       "party_id": 8,
       "position": "no",
-      "body": "Man har ramt balancen meget godt. Det er vigtigt, at det ikke må gå ud over andre mennesker, når man udøver sin religion. Men vi mener, man har fundet en god balance lokalt."
+      "body": "Det er vigtigt, at det ikke må gå ud over andre mennesker, når man udøver sin religion. Men vi mener, man har fundet en god balance lokalt."
     },
     {
       "id": 134,
@@ -1279,7 +1093,7 @@ module.exports = {
       "issue_id": 15,
       "party_id": 8,
       "position": "yes",
-      "body": "Ja. EU bestemmer alt for meget i forhold til dansk lov. Det er langt ude, at Danmark ikke selv må beslutte at forbyde hormonforstyrrende stoffer, som betyder, at vores børn og unge får problemer med at få børn senere i livet. Eller at EU blander sig i, om vi må tage effektive midler mod social dumping i brug. "
+      "body": "Ja. EU bestemmer alt for meget i forhold til dansk lov. Det er langt ude, at Danmark ikke selv må beslutte at forbyde hormonforstyrrende stoffer, som betyder, at vores børn og unge får problemer med at få børn senere i livet. Eller at EU blander sig i, om vi må tage effektive midler mod social dumping i brug."
     },
     {
       "id": 144,
@@ -1321,7 +1135,7 @@ module.exports = {
       "issue_id": 16,
       "party_id": 9,
       "position": "yes",
-      "body": "Ja, Ulandsbistanden skal sænkes, så vi kommer på det niveau, FN anbefaler."
+      "body": "Ja. Ulandsbistanden skal sænkes, så vi kommer på det niveau, FN anbefaler."
     },
     {
       "id": 150,
@@ -1349,7 +1163,7 @@ module.exports = {
       "issue_id": 16,
       "party_id": 8,
       "position": "no",
-      "body": "Nej. Ulandsbistanden skal ikke sænkes. Den gør, at vi kan hjælpe i nærområderne, så færre mennesker tvinges på flugt."
+      "body": "Nej. Ulandsbistanden skal hæves. Et rigt land som Danmark har en klar forpligtelse til at bidrage mere. Og ulandsbistanden gør, at vi kan hjælpe i nærområderne, så færre mennesker tvinges på flugt."
     },
     {
       "id": 154,
@@ -1377,7 +1191,7 @@ module.exports = {
       "issue_id": 16,
       "party_id": 0,
       "position": "no",
-      "body": "Nej. Vi skal ikke sænke ulandsbistanden for at kunne bruge pengene på skattelettelser i Danmark. Ulandsbistanden går jo blandt andet til at sikre skolegang og nødhjælp i områder, hvor vi ellers risikerer, at fundamentalister bestemmer."
+      "body": "Tildels. Vi har tidligere gjort det af hensyn til folkesundheden og for at forhindre unge mennesker i at starte med at ryge, og næste år indekserer vi afgiften på cigaretter."
     },
     {
       "id": 158,
@@ -1398,7 +1212,7 @@ module.exports = {
       "issue_id": 17,
       "party_id": 5,
       "position": "no",
-      "body": "Nja, selvfølgelig kan der være miljøhensyn, man skal tage, men vi skal passe på med ikke at gøre Danmark til et frilandsmuseum og begrænse den økonomiske vækst. For vi har brug for vækst, hvis Danmark skal blive et rigere land. "
+      "body": "Nja, selvfølgelig kan der være miljøhensyn, man skal tage, men vi skal passe på med ikke at gøre Danmark til et frilandsmuseum og begrænse den økonomiske vækst. For vi har brug for vækst, hvis Danmark skal blive et rigere land."
     },
     {
       "id": 161,
@@ -1517,7 +1331,7 @@ module.exports = {
       "issue_id": 18,
       "party_id": 0,
       "position": "no",
-      "body": "Nej. Vi har for eksempel ikke lyst til, at børn og unge skal betale penge for at gå på biblioteket. Det er vigtigt, at det er gratis og frit for alle."
+      "body": "Nej. Vi har for eksempel ikke lyst til, at børn og unge skal betale penge for at låne penge på biblioteket. Det er vigtigt, at det er gratis og frit for alle."
     },
     {
       "id": 178,
@@ -1545,7 +1359,7 @@ module.exports = {
       "issue_id": 19,
       "party_id": 6,
       "position": "maybe",
-      "body": "Kristendemokraterne har et krone-til-krone princip: Hver gang der bruges én krone på skattelettelser, skal der bruges én krone på sociale tiltag. "
+      "body": "Kristendemokraterne har et krone-til-krone princip: Hver gang der bruges én krone på skattelettelser, skal der bruges én krone på sociale tiltag."
     },
     {
       "id": 182,
@@ -1559,14 +1373,14 @@ module.exports = {
       "issue_id": 19,
       "party_id": 8,
       "position": "no",
-      "body": "Nej. Skatteindtægter financierer velfærden og derfor drejer skattepolitik sig om, hvem der skal betale for velfærden. Enhedslisten mener, at de rigeste skal betale mest, og at virksomhederne skal betale mere til vores fælles velfærd. "
+      "body": "Nej. Skatteindtægter financierer velfærden og derfor drejer skattepolitik sig om, hvem der skal betale for velfærden. Enhedslisten mener, at de rigeste skal betale mest, og at virksomhederne skal betale mere til vores fælles velfærd. Samtidig vil vi sænke skatten for dem, der har mindst."
     },
     {
       "id": 184,
       "issue_id": 19,
       "party_id": 2,
       "position": "yes",
-      "body": "Ja, vi skal fortsætte med at sænke skatten på arbejde. Både i bunden og i toppen. Til gengæld skal fastfrysningen af boligskatten ophæves, så vi stopper med at omfordele til fordel for dem, der har mest. "
+      "body": "Ja, vi skal fortsætte med at sænke skatten på arbejde. Både i bunden og i toppen. Til gengæld skal fastfrysningen af boligskatten ophæves, så vi stopper med at omfordele til fordel for dem, der har mest."
     },
     {
       "id": 185,
@@ -1580,21 +1394,21 @@ module.exports = {
       "issue_id": 19,
       "party_id": 7,
       "position": "maybe",
-      "body": "Dansk Folkeparti er ikke modstandere af at sænke skatten, men det vigtigste er, at velfærden bliver sikret. "
+      "body": "Dansk Folkeparti er ikke modstandere af at sænke skatten, men det vigtigste er, at velfærden bliver sikret."
     },
     {
       "id": 187,
       "issue_id": 19,
       "party_id": 0,
       "position": "maybe",
-      "body": "Socialdemokraterne har lavet en skattereform, der sænker skatten på arbejde for almindelige mennesker. Vi mener ikke at topskatten skal fjernes, da den sikrer, at dem der tjener mest, bidrager mest til fællesskabet. "
+      "body": "Socialdemokraterne har lavet en skattereform, der sænker skatten på arbejde for almindelige mennesker. Vi mener ikke at topskatten skal fjernes, da den sikrer, at dem der tjener mest, bidrager mest til fællesskabet."
     },
     {
       "id": 188,
       "issue_id": 19,
       "party_id": 4,
       "position": "yes",
-      "body": "Ja, vi skal sænke skatten på arbejde ved at hæve beskæftigelsesfradraget. Skattelettelsen skal financieres med en skat på financielle transaktioner. Vi skal ikke give skattelettelser til erhvervslivet, men bruge pengene på at udbygge vores velfærd. "
+      "body": "Ja, vi skal sænke skatten på arbejde ved at hæve beskæftigelsesfradraget. Skattelettelsen skal financieres med en skat på financielle transaktioner. Vi skal ikke give skattelettelser til erhvervslivet, men bruge pengene på at udbygge vores velfærd."
     },
     {
       "id": 189,
@@ -1615,7 +1429,7 @@ module.exports = {
       "issue_id": 20,
       "party_id": 6,
       "position": "maybe",
-      "body": "Det skal være lettere at få asyl som forfulgt kristen. Danmark har i forvejen nogle af de strammeste asylregler i Europa. "
+      "body": "Det skal være lettere at få asyl som forfulgt kristen. Danmark har i forvejen nogle af de strammeste asylregler i Europa."
     },
     {
       "id": 192,
@@ -1629,14 +1443,14 @@ module.exports = {
       "issue_id": 20,
       "party_id": 8,
       "position": "no",
-      "body": "Nej. Ikke siden Anden Verdenskrig har så mange mennesker været tvunget på flugt. Danmark skal tage sin del af ansvaret for at hjælpe. "
+      "body": "Nej. Ikke siden Anden Verdenskrig har så mange mennesker været tvunget på flugt. Danmark skal tage sin del af ansvaret for at hjælpe."
     },
     {
       "id": 194,
       "issue_id": 20,
       "party_id": 2,
       "position": "no",
-      "body": "Nej. Vi skal overholde konventionerne og give beskyttelse til alle der banker på vores dør med et legitimt behov for beskyttelse"
+      "body": "Nej. Vi skal overholde konventionerne og give beskyttelse til alle der banker på vores dør med et legitimt behov for beskyttelse."
     },
     {
       "id": 195,
