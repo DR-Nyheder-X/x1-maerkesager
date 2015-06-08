@@ -18,12 +18,19 @@ export default React.createClass({
 
     return (
       <div className={`Modal backdrop`}>
+        <a name='top'>
         <div className='box'>
           <a href='' className='close-button' onClick={this.props.onClose}>&laquo; Tilbage</a>
-          <header>
-            <h1>{issue.title}</h1>
-            <h2 className='category' style={{backgroundColor: category.color}}>{category.title}</h2>
-          </header>
+          <div className='item dr-spot heading-medium' key={issue.id}>
+            <div className='title'>
+              <div className='label'>
+                <span>{category.title}</span>
+              </div>
+              {issue.title.split(' ').map(word => {
+                return <span>{word}</span>
+              })}
+            </div>
+          </div>
           <div className='description' dangerouslySetInnerHTML={{__html: issue.description}}></div>
           <h3>{issue.question}</h3>
           <AnswerTable answers={answers.filter(answer => {

@@ -1159,7 +1159,7 @@ module.exports = {
       issue_id: 16,
       party_id: 5,
       position: 'yes',
-      body: 'Ja, ulandsbistanden skal sænkes til 0,7 procent af BNI. Det er FN's anbefaling, og det støtter Liberal Alliance op om.'
+      body: 'Ja, ulandsbistanden skal sænkes til 0,7 procent af BNI. Det er FN\'s anbefaling, og det støtter Liberal Alliance op om.'
     },
     {
       id: 151,

@@ -14,26 +14,31 @@ export default React.createClass({
   },
   render () {
     return (
-      <ul className='IssuesList'>
+      <div className='IssuesList'>
         {issues.map(issue => {
           const category = categories.find(c => c.id === issue.category_id)
           return (
-            <li key={issue.id}>
-              <a href='' onClick={clickFn(this.props, 'onIssueClick', issue)} style={{backgroundImage: `url(http://www.dr.dk/nyheder/htm/drdinstemme/issues/${issue.id}.jpg)`}}>
-                <div className='gradient'>
-                  <h1>{issue.title}</h1>
-                  <h2>
-                    <span className='category' style={{backgroundColor: category.color}}>
-                    {category.title}
-                    </span>
-                  </h2>
-                </div>
-              </a>
-            </li>
+            <div className='span-4'>
+              <div className='item dr-spot heading-medium' key={issue.id}>
+                <a href={`#issue-${issue.id}`} onClick={clickFn(this.props, 'onIssueClick', issue)}>
+                  <span role='presentation' aria-hidden='true' className='image-wrap ratio-16-9 lazy-broken'>
+                    <img src={`http://www.dr.dk/nyheder/htm/drdinstemme/issues/${issue.id}.jpg`} alt='Sed do eiusmod tempor.' width='640' height='400' role='presentation' aria-hidden='true' />
+                  </span>
+                  <div className='title'>
+                    <div className='label'>
+                      <span>{category.title}</span>
+                    </div>
+                    {issue.title.split(' ').map(word => {
+                      return <span>{word}</span>
+                    })}
+                  </div>
+                </a>
+              </div>
+            </div>
           )
         })}
         <br style={{clear: 'both'}} />
-      </ul>
+      </div>
     )
   }
 })
