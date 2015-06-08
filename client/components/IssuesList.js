@@ -19,7 +19,7 @@ export default React.createClass({
           const category = categories.find(c => c.id === issue.category_id)
           return (
             <li key={issue.id}>
-              <a href='' onClick={clickFn(this.props, 'onIssueClick', issue)} style={{backgroundImage: `url(/nyheder/htm/drdinstemme/issues/${issue.id}.jpg)`}}>
+              <a href='' onClick={clickFn(this.props, 'onIssueClick', issue)} style={{backgroundImage: `url(http://www.dr.dk/nyheder/htm/drdinstemme/issues/${issue.id}.jpg)`}}>
                 <div className='gradient'>
                   <h1>{issue.title}</h1>
                   <h2>
