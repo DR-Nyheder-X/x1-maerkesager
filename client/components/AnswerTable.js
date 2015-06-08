@@ -1,6 +1,7 @@
 import React from 'react'
 import { parties } from '../data'
 import { positions as posLabel } from '../lib/labels'
+import { range } from 'lodash'
 
 require('./AnswerTable.scss')
 
@@ -10,26 +11,33 @@ export default React.createClass({
     answers: React.PropTypes.array
   },
   render () {
-    const answers = this.props.answers
+    const allAnswers = this.props.answers
+    let wings = allAnswers.reduce((answers, answer) => {
+      answer.party = parties.find(p => p.id === answer.party_id)
+      answers[answer.party.wing].push(answer)
+      return answers
+    }, { left: [], right: [] })
     return (
       <table className='AnswerTable'>
         <tbody>
-          {answers.map(answer => {
-            const party = parties.find(p => p.id === answer.party_id)
-            return (
-              <tr key={answer.id}>
-                <td className={`list ${cssClass(party.list)}`} style={{backgroundColor: party.color}}>
-                  <a href={`#answer-${answer.id}`}>
-                    {party.list}
-                  </a>
-                </td>
-                <td className={`position ${answer.position}`}>
-                  <a href={`#answer-${answer.id}`}>
-                    {posLabel(answer.position)}
-                  </a>
-                </td>
-              </tr>
-            )
+          {range(0, wings.left.length).map(i => {
+            return ['left', 'right'].map(wing => {
+              const answer = wings[wing].shift()
+              return (
+                <tr key={answer.id}>
+                  <td className={`list ${cssClass(answer.party.list)}`} style={{backgroundColor: answer.party.color}}>
+                    <a href={`#answer-${answer.id}`}>
+                      {answer.party.list}
+                    </a>
+                  </td>
+                  <td className={`position ${answer.position}`}>
+                    <a href={`#answer-${answer.id}`}>
+                      {posLabel(answer.position)}
+                    </a>
+                  </td>
+                </tr>
+              )
+            })
           })}
         </tbody>
       </table>
