@@ -1,6 +1,7 @@
 import React from 'react'
 import { parties } from '../data'
 import { positions as posLabel } from '../lib/labels'
+import sortByMandates from '../lib/sortByMandates'
 
 require('./AnswerTable.scss')
 
@@ -22,6 +23,8 @@ export default React.createClass({
       answers[answer.party.wing].push(answer)
       return answers
     }, { left: [], right: [] })
+    wings.left = sortByMandates(wings.left)
+    wings.right = sortByMandates(wings.right)
     return (
       <table className='AnswerTable'>
         <tbody>
