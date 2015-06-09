@@ -12,7 +12,7 @@ function idFromWatchLink (link) {
 
 function ytEmbed (link) {
   const id = idFromWatchLink(link)
-  return <iframe width='640' height='390' src={`https://www.youtube.com/embed/${id}`} frameBorder='0' allowFullscreen></iframe>
+  return <iframe width='640' height='390' src={`https://www.youtube.com/embed/${id}`} frameBorder='0' allowFullScreen></iframe>
 }
 
 export default React.createClass({

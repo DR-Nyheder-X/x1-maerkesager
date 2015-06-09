@@ -25,7 +25,7 @@ export default React.createClass({
                 </div>
                 <h1>
                   {issue.title.split(' ').map(word => {
-                    return <span>{word}</span>
+                    return <span key={word}>{word}</span>
                   })}
                 </h1>
               </div>
