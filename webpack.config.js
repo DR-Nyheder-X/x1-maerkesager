@@ -39,7 +39,7 @@ var config = {
   module: {
     loaders: [
       { test: /\.jsx?$/, loaders: loaders, include: path.join(__dirname, 'client') },
-      { test: /\.s?css?$/, loaders: ['style', 'css', 'sass'] }
+      { test: /\.s?css?$/, loaders: ['style', 'css', 'autoprefixer', 'sass'] }
     ]
   }
 }

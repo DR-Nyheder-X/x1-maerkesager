@@ -1,10 +1,39 @@
 #issues-root-bpfjVLpdn5z .IssuesList {
-  .item {
-    height: 175px;
+  @media screen and (min-width: 500px) {
+    & > li {
+      float: left;
+      width: 50%;
+    }
   }
-  .title {
+
+  span {
+    display: inline-block;
+    background: black;
+    padding-right: 8px;
   }
-  .span-4 {
-    float: left;
+
+  li > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    background-position: top center;
+    background-size: cover;
+    padding: 4em 1em 1em;
+
+    h1, h2 {
+      margin: 0;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 26px;
+      margin-bottom: 6px;
+      line-height: 1;
+      height: 54px;
+    }
+    h2 {
+      font-size: 14px;
+      font-weight: 100;
+    }
   }
 }
