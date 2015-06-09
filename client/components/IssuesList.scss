@@ -10,6 +10,12 @@
     display: inline-block;
     background: black;
     padding-right: 8px;
+    text-transform: uppercase;
+  }
+
+  .category {
+    color: #999;
+    font-size: 16px;
   }
 
   li > a {
@@ -19,7 +25,11 @@
     -webkit-font-smoothing: antialiased;
     background-position: top center;
     background-size: cover;
-    padding: 4em 1em 1em;
+    height: 160px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
 
     h1, h2 {
       margin: 0;
@@ -27,9 +37,8 @@
     h1 {
       font-weight: normal;
       font-size: 26px;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
       line-height: 1;
-      height: 54px;
     }
     h2 {
       font-size: 14px;

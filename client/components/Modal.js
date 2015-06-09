@@ -4,6 +4,16 @@ import { answers as allAnswers, categories, parties } from '../data'
 
 require('./Modal.scss')
 
+function idFromWatchLink (link) {
+  const match = link.match(/https?:\/\/(www\.)?youtube.com\/watch\?v=([A-Za-z0-9\-_]+)/)
+  return match ? match[2] : null
+}
+
+function ytEmbed (link) {
+  const id = idFromWatchLink(link)
+  return <iframe width='640' height='390' src={`https://www.youtube.com/embed/${id}`} frameBorder='0' allowFullscreen></iframe>
+}
+
 export default React.createClass({
   displayName: 'Modal',
   propTypes: {
@@ -27,15 +37,24 @@ export default React.createClass({
                 <span>{category.title}</span>
               </div>
               {issue.title.split(' ').map(word => {
-                return <span>{word}</span>
+                return <span key={word}>{word}</span>
               })}
             </div>
           </div>
           <div className='description' dangerouslySetInnerHTML={{__html: issue.description}}></div>
+
           <h3>{issue.question}</h3>
           <AnswerTable answers={answers.filter(answer => {
             return issue.id === answer.issue_id
           })} />
+
+          {issue.youtube && (
+            <div>
+              <h3>Video</h3>
+              {ytEmbed(issue.youtube)}
+            </div>
+          )}
+
           <h3>Partierne siger:</h3>
           {answers.map(answer => {
             const party = parties.find(p => p.id === answer.party_id)

@@ -20,9 +20,9 @@ export default React.createClass({
           return (
             <li key={issue.id}>
               <a href='' onClick={clickFn(this.props, 'onIssueClick', issue)} style={{backgroundImage: `url(http://www.dr.dk/nyheder/htm/drdinstemme/issues/${issue.id}.jpg)`}}>
-                <h2>
+                <div>
                   <span className='category'>{category.title}</span>
-                </h2>
+                </div>
                 <h1>
                   {issue.title.split(' ').map(word => {
                     return <span>{word}</span>

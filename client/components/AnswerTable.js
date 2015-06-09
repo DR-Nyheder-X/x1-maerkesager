@@ -1,9 +1,14 @@
 import React from 'react'
 import { parties } from '../data'
 import { positions as posLabel } from '../lib/labels'
-import { range } from 'lodash'
 
 require('./AnswerTable.scss')
+
+function range (from, to) {
+  let nums = []
+  for (let i = from; i <= to; i++) nums.push(i)
+  return nums
+}
 
 export default React.createClass({
   displayName: 'AnswerTable',
@@ -20,7 +25,7 @@ export default React.createClass({
     return (
       <table className='AnswerTable'>
         <tbody>
-          {range(0, wings.left.length).map(i => {
+          {range(0, wings.left.length - 1).map(i => {
             return ['left', 'right'].map(wing => {
               const answer = wings[wing].shift()
               return (
