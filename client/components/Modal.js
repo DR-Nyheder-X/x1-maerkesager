@@ -30,7 +30,7 @@ export default React.createClass({
       <div className={`Modal backdrop`}>
         <a name='top'></a>
         <div className='box'>
-          <div className='close-button' onClick={this.props.onClose}>&laquo; Tilbage</div>
+          <a href={window.location} className='close-button' onClick={this.props.onClose}>&laquo; Tilbage</a>
           <div className='item dr-spot heading-medium' key={issue.id}>
             <div className='title'>
               <div className='label'>
