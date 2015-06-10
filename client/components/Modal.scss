@@ -19,6 +19,15 @@
     background: none;
   }
 
+  iframe {
+    width: 640px;
+    height: 390px;
+    @media screen and (max-width: 500px) {
+      width: 240px !important;
+      height: 200px;
+    }
+  }
+
   h3 {
     margin: 20px 0 10px;
   }

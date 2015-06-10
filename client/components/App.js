@@ -12,6 +12,7 @@ export default React.createClass({
   },
   issueClick (issue) {
     this.setState({ issue })
+    window.scrollTo(0, 0)
   },
   render () {
     const issue = this.state.issue
