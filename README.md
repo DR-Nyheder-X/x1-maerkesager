@@ -1,28 +1,26 @@
-# hothothot
+# Mærkesager
 
-Yet another Webpack starter
+This is meant to be run as a _CodeComponent_ inside a Webcms article on dr.dk.
 
-* Webpack
-* Babel
-* React Hot Loader
-* SCSS
-* Mocha (and jsdom)
+## Development
 
-Based on [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate.git) but with added SCSS.
+Run a live (and hot) reloading dev server with
 
-# dev
-
-```
+```sh
 $ npm start
 ```
 
-# prod
+## Production
 
-What is production?
+Build for distribution using
 
+```sh
+$ npm run build
 ```
-$ env NODE_ENV=production npm build
-```
 
-You still have to go change the path to the js in `index.html` because I haven't decided on how I want to go about providing that file.
+Then move it to the network folder `Z:` or whatever it's called. And reference it in a code component using
+
+```html
+<script src='http://dr.dk/wherever/you/put/it'></script>
+```
 
