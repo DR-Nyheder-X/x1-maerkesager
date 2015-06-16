@@ -654,8 +654,8 @@ module.exports = {
       id: 92,
       issue_id: 10,
       party_id: 1, // Å
-      position: 'no',
-      body: 'Det synes vi ikke. Vi har rigtigt mange ressourcer bundet til den offentlige sektor - og det skal der også være. Men vi går ikke nødvendigvis ind for en større offentlig sektor.'
+      position: 'maybe',
+      body: 'Det vigtigste er for os, at det offentlige har den størrelse, det skal have. Om det betyder, at det for fremtiden bliver mindre eller større, vil vi ikke spå om.'
     },
     {
       id: 93,

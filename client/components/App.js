@@ -18,7 +18,7 @@ export default React.createClass({
     const issue = this.state.issue
     return (
       <div>
-        {!issue && <IssuesList ref='issues' onIssueClick={this.issueClick} />}
+        {!issue && <IssuesList onIssueClick={this.issueClick} />}
         {issue && <Modal onClose={clickFn(this, 'issueClick', null)} issue={this.state.issue} />}
       </div>
     )
