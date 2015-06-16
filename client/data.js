@@ -138,9 +138,9 @@ module.exports = {
     },
     {
       id: 21,
-      title: 'Mangel på læger i yderområderne',
+      title: 'Lægemangel',
       category_id: 5, // Sundhed
-      description: '', // TODO
+      description: 'Der er lægemangel i landets yderområde. De ældre praktiserende læger, der er på vej på pension, kan ikke få unge læger til at overtage deres klinikker. På landsplan mangler der derfor 116 praktiserende læger.',
       question: 'Skal praktiserende læger have højere løn for at arbejde i yderområderne?',
       youtube: ''
     },
@@ -148,7 +148,7 @@ module.exports = {
       id: 22,
       title: 'Overbelægning på sygehusene',
       category_id: 5, // Sundhed
-      description: '', // TODO
+      description: 'Overbelægning er et stigende problem på mange af landets sygehuse. Det betyder patienter på gangene og for lidt personale. Samtidig kæmper sygehusene med stigende medicinpriser, der truer med at opsluge hele budgettet de kommende år.',
       question: 'Skal vi acceptere overbelægning på landets sygehuse for at få råd til den bedste medicin?',
       youtube: ''
     },
@@ -156,7 +156,7 @@ module.exports = {
       id: 23,
       title: 'Nedsættelse af selskabsskat',
       category_id: 1, // Økonomi
-      description: '', // TODO
+      description: 'Danske virksomheders vilkår er afgørende for at skabe vækst og velstand og et af de vilkår, der kan justeres på, er skatten på selskaber. I dag betaler virksomheder 23,5 procent i skat – næste år falder den til 22 procent på grund af en bred politisk aftale. Spørgsmålet er om den skal yderligere ned?',
       question: 'Skal selskabsskatten sættes yderligere ned?',
       youtube: ''
     }
@@ -1410,7 +1410,7 @@ module.exports = {
       id: 200,
       issue_id: 21,
       party_id: 0, // A
-      position: 'maybe',
+      position: 'yes',
       body: '' // TODO
     },
     {
@@ -1466,7 +1466,7 @@ module.exports = {
       id: 208,
       issue_id: 21,
       party_id: 9, // V
-      position: 'maybe',
+      position: 'yes',
       body: '' // TODO
     },
     {
@@ -1557,7 +1557,7 @@ module.exports = {
       id: 221,
       issue_id: 23,
       party_id: 2, // B
-      position: 'no',
+      position: 'maybe',
       body: '' // TODO
     },
     {
