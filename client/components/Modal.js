@@ -34,6 +34,9 @@ export default React.createClass({
       return a
     })
     answers = sortByMandates(answers)
+    const answersWithExplanation = answers.filter(answer => {
+      return answer.body.length > 0
+    })
 
     return (
       <div className={`Modal backdrop`}>
@@ -64,19 +67,23 @@ export default React.createClass({
             </div>
           )}
 
-          <h3>Partierne siger:</h3>
-          {answers.map(answer => {
-            return (
-              <dl key={answer.id}>
-                <a name={`answer-${answer.id}`}></a>
-                <dt>
-                  <span className='list' style={{backgroundColor: answer.party.color}}>{answer.party.list}</span>
-                  {answer.party.name}
-                </dt>
-                <dd dangerouslySetInnerHTML={{__html: answer.body}}></dd>
-              </dl>
-            )
-          })}
+          {answersWithExplanation.length > 0 && (
+            <div>
+              <h3>Partierne siger:</h3>
+              {answersWithExplanation.map(answer => {
+                return (
+                  <dl key={answer.id}>
+                    <a name={`answer-${answer.id}`}></a>
+                    <dt>
+                      <span className='list' style={{backgroundColor: answer.party.color}}>{answer.party.list}</span>
+                      {answer.party.name}
+                    </dt>
+                    <dd dangerouslySetInnerHTML={{__html: answer.body}}></dd>
+                  </dl>
+                )
+              })}
+            </div>
+          )}
         </div>
       </div>
     )
