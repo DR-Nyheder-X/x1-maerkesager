@@ -5,7 +5,7 @@ import fs from 'fs'
 import { sync as mkdirpSync } from 'mkdirp'
 
 var connection = mysql.createConnection(
-  'mysql2://demoaften:2tfwQfcUWDGbSPQV@localhost/demoaften')
+  'mysql2://demoaften:demoaften@localhost/demoaften')
 connection.connect()
 
 function q(query, done) {
